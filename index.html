@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="http://www.mike-ogden.com/work.html">Go Back &lAarr; </a>
+            <a href="http://www.mike-ogden.com/contact.html">Contact Me!</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Javascript Calculator</h1>
+        <hr>
+
+        <div class="calculator" id="calculator">
+            <div class="display" id="display">
+                <div data-prev-op id="previous-operand"></div>
+                <div data-curr-op id="current-operand"></div>
+            </div>
+            <div class="btn-box" id="btn-box">
+                <button disabled data-percent class="btn btn-disabled" id="btn-percent">%</button>
+                <button data-clear-entry class="btn" id="btn-clear-entry">CE</button>
+                <button data-clear class="btn" id="btn-clear">C</button>
+                <button data-delete class="btn" id="btn-backspace">&lBarr;</button>
+                <button data-fraction class="btn" id="btn-fraction">1/x</button>
+                <button data-squared class="btn" id="btn-squared">x&sup2;</button>
+                <button data-square-root class="btn" id="btn-square-root">&Sqrt;x</button>
+                <button data-operation class="btn" id="btn-divide">÷</button>
+                <button data-number class="btn" id="btn-seven">7</button>
+                <button data-number class="btn" id="btn-eight">8</button>
+                <button data-number class="btn" id="btn-nine">9</button>
+                <button data-operation class="btn" id="btn-multiply">×</button>
+                <button data-number class="btn" id="btn-four">4</button>
+                <button data-number class="btn" id="btn-five">5</button>
+                <button data-number class="btn" id="btn-six">6</button>
+                <button data-operation class="btn" id="btn-subtract">-</button>
+                <button data-number class="btn" id="btn-one">1</button>
+                <button data-number class="btn" id="btn-two">2</button>
+                <button data-number class="btn" id="btn-three">3</button>
+                <button data-operation class="btn" id="btn-add">+</button>
+                <button data-negative class="btn" id="btn-negative">+/-</button>
+                <button data-number class="btn" id="btn-zero">0</button>
+                <button data-number class="btn" id="btn-decimal">.</button>
+                <button data-equals class="btn" id="btn-equals">=</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <small>&copy;2021</small>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

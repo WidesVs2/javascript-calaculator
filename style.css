@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+}
+
+header nav {
+    margin: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 100px 5px;
+    text-align: center;
+}
+
+main #calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #c7eafa;
+    border: #222 solid 3px;
+    border-radius: 15px;
+    box-shadow: #333 5px 5px 5px;
+    max-width: 35vw;
+    height: 65vh;
+}
+
+@media (max-width: 600px) {
+    main #calculator {
+        max-width: 85vw;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    main #calculator {
+        max-width: 50vw;
+    }
+}
+
+main #calculator #display {
+    background-color: #ccc;
+    width: 90%;
+    height: 15vh;
+    margin: 15px 5px 15px 5px;
+    border: #777 inset 3px;
+    border-radius: 15px;
+    text-align: right;
+    position: relative;
+}
+
+main #calculator #display #current-operand {
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    font-size: 2.5rem;
+}
+
+main #calculator #display #previous-operand {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-size: 1.3rem;
+}
+
+main #calculator #btn-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+main #calculator #btn-box button.btn {
+    margin: 0px;
+    font-size: 1.8rem;
+    width: 75px;
+    height: 45px;
+    border: #c7eafa solid 1px;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: 0.5s ease-in;
+}
+
+main #calculator #btn-box button.btn:hover {
+    background-color: #3bbbf7;
+    cursor: pointer;
+}
+
+main #calculator #btn-box button.btn.btn-disabled {
+    background-color: #555;
+}
+
+main #calculator #btn-box button.btn.btn-disabled:hover {
+    background-color: #555;
+    cursor: default;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 15px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
